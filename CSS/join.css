@@ -1,0 +1,299 @@
+/*text: #0B1942
+inline link: #00B7D3
+h2 background: #0B1942
+h2 color: #FFFFFF
+logo background: #F5005B
+navigation background: #7DDFE8
+navigation link color: #FFFFFF
+"Home" nav link background: #00A5BF
+"Calendar" nav link background: #00B7D3
+"Join" nav link background: #00D5E7
+"Up Next" background: #0B1942
+"Up Next" card background #E2E2E2
+calendar background and treatments: #0B1942
+calendar highlighted day: #F5005B
+button background: #F5005B
+copyright text: #FFFFFF*/
+
+body {
+  font-family: 'PT Sans', sans-serif;
+  margin: 0;
+}
+
+header {
+  display: flex;
+  background-color: #7DDFE8;
+}
+
+#film_logo img {
+  background-color: #F5005B;
+  height: 7rem;
+  padding: 5px;
+  margin-bottom: -5px;
+}
+
+.main_navigation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  align-self: stretch;
+  /*width: 100%;
+  flex: 1 1 40%;*/
+}
+
+.main_navigation a {
+  flex: 1 1 33%;
+  text-align: center;
+  color: #FFFFFF;
+  text-decoration: none;
+  /*justify-content: center;*/
+  padding-top: 10px;
+}
+
+#home {
+  background-color: #00A5BF;
+}
+
+#calendar {
+  background-color: #00B7D3;
+}
+
+#join {
+  background-color: #00D5E7;
+}
+
+h1 {
+  font-weight: normal;
+  margin-left: 20px;
+  /*margin-right: 15px;*/
+}
+
+fieldset {
+  border: none;
+  margin-bottom: 20px;
+}
+
+.pro_pic {
+  display: flex;
+  flex-direction: column;
+  /*width: 80%;*/
+  /*margin-left: 20px;*/
+  /*margin-right: 20px;*/
+}
+
+#file {
+  font-size: 1rem;
+  margin-bottom: 40px;
+}
+
+form {
+  /*width: 100%;*/
+}
+
+fieldset img {
+  border-radius: 50%;
+  /*align-self: center;*/
+  /*justify-content: center;*/
+  width: 75%;
+  margin: 0 auto;
+  /*height: 75vh;*/
+  /*height: 50%;*/
+}
+
+.profile_info {
+  margin-top: 50px;
+}
+
+.profile_info div {
+  /*margin-top: 15px;*/
+  margin-bottom: 30px;
+}
+
+.profile_info input {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 90%;
+
+}
+
+.genre_list {
+  line-height: 2;
+  /*display: flex;*/
+}
+
+.genre_list div {
+  /*margin-top: 15px;
+  margin-bottom: 15px;*/
+}
+
+.genre_list input {
+  /*width: auto;*/
+}
+
+.additional_info {
+  margin-top: 10px;
+}
+
+.additional_info textarea {
+  width: 97%;
+  margin-top: 5px;
+}
+
+.submit_container {
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+
+#submit_button {
+    width: auto;
+    padding: 20px;
+    background-color: #F5005B;
+    border: none;
+    color: white;
+    font-size: 1rem;
+}
+
+.bottom_nav {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  width: 100%;
+  background-color: #7DDFE8;
+}
+
+.alt_nav {
+  display: flex;
+  flex-direction: column;
+  /*align-self: center;*/
+  width: 100%;
+  text-align: center;
+}
+
+.alt_nav a {
+  color: #FFFFFF;
+  text-decoration: none;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+#copyright {
+  color: #FFFFFF;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+@media screen and (min-width: 545px) {
+  .main_navigation {
+    flex-direction: row;
+    width: 45%;
+  }
+  .main_navigation a {
+    padding-top: 45px;
+  }
+
+  .page_top {
+    display: flex;
+  }
+  .pro_pic {
+    flex: 1 1 50%;
+  }
+  .profile_info {
+    flex: 1 1 40%;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  fieldset img {
+    width: 90%;
+  }
+
+  #credentials {
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+  .genre_list{
+    display: flex;
+  }
+  .list1 {
+    flex: 1 1 50%;
+  }
+  .list2 {
+    flex: 1 1 50%;
+  }
+  .bottom_nav {
+    flex-direction: row;
+  }
+
+  .alt_nav {
+    flex-direction: row;
+    width: 25%;
+  }
+
+  .alt_nav a {
+    flex: 1 1 33%;
+    padding-top: 35px;
+    /*justify-content: center;*/
+    /*align-self: center;*/
+  }
+
+  #copyright {
+    width: 100%;
+    text-align: right;
+    margin-right: 10px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .main_navigation {
+    width: 35%;
+  }
+  .pro_pic {
+    flex: 1 1 15%;
+  }
+  .profile_info {
+    flex: 1 1 75%;
+    /*margin-top: 0;
+    display: flex;*/
+    flex-direction: row;
+  }
+  #full_name {
+    flex: 1 1 45%;
+  }
+  #credentials {
+    flex: 1 1 45%;
+    margin-top: 0;
+  }
+  .genre_list {
+    flex-direction: column;
+    line-height: 2.25;
+    margin-bottom: 20px;
+  }
+  .list1 {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 0;
+  }
+  .list2 {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0;
+  }
+  .list1 div{
+    flex: 1 1 33%;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .list2 div{
+    flex: 1 1 33%;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .list2 div:last-child{
+    flex: 1 1 66%;
+  }
+  .additional_info textarea {
+    width: 65%;
+  }
+}

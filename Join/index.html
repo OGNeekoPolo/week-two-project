@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Film Club - Join</title>
+  <link rel="stylesheet" href="../css/join.css">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <div id="film_logo">
+      <img src="../images/filmclub.png" alt="logo">
+    </div>
+    <div class="main_navigation">
+      <a href="../index.html" id="home" alt="home">Home</a>
+      <a href="../Calendar/index.html" id="calendar" alt="calendar">Calendar</a>
+      <a href="./index.html" id="join" alt="join">Join</a>
+    </div>
+  </header>
+  <h1>Join Film Club</h1>
+  <form class="join_form">
+    <fieldset class="information">
+      <div class="page_top">
+        <div class="pro_pic">
+          <label for="file">profile picture</label>
+          <input type="file" id="file">
+          <img src="../images/profile-placeholder.png" id="placeholder" alt="profile">
+        </div>
+        <div class="profile_info">
+          <div id="full_name">
+            <div class="name">
+              <label for="full_name">name</label>
+              <br>
+              <input type="text" name="full_name" value="">
+            </div>
+            <div class="email">
+              <label for="user_email">email</label>
+              <br>
+              <input type="email" name="user_email" value="">
+            </div>
+          </div>
+          <div id="credentials">
+            <div class="password">
+              <label for="user_password">password</label>
+              <br>
+              <input type="password" name="user_password" value="">
+            </div>
+            <div class="confirmation">
+              <label for="confirm_pw">confrim password</label>
+              <br>
+              <input type="password" name="confirm_pw" value="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <p>What genres are you interested in?</p>
+      <div class="genre_list">
+        <div class="list1">
+        <div>
+          <!-- <label> -->
+          <input type="checkbox" id="genre" value="action">action
+          <br>
+          <!-- </label> -->
+        </div>
+        <div>
+          <!-- <- <label> -->
+          <input type="checkbox" id="genre" value="adventure">adventure
+          <br>
+          <!-- </label> -->
+        </div>
+        <div>
+          <!-- <label> -->
+          <input type="checkbox" id="genre" value="comedy">comedy
+          <br>
+          <!-- </label> -->
+        </div>
+        <div>
+          <!-- <label> -->
+          <input type="checkbox" id="genre" value="drama">drama
+          <br>
+          <!-- </label> -->
+        </div>
+        <div>
+          <!-- <label> -->
+          <input type="checkbox" id="genre" value="fantasy">fantasy
+          <br>
+          <!-- fantasy -->
+          <!-- </label> -->
+        </div>
+        <div>
+          <!-- <label> -->
+          <input type="checkbox" id="genre" value="historical">historical
+          <br>
+          <!-- </label> -->
+        </div>
+      </div>
+      <div class="list2">
+        <div>
+          <!-- <label> -->
+          <input type="checkbox" id="genre" value="horror">horror
+          <br>
+          <!-- </label> -->
+        </div>
+        <div>
+          <!-- <label> -->
+          <input type="checkbox" id="genre" value="mystery">mystery
+          <br>
+          <!-- </label> -->
+        </div>
+        <div>
+          <!-- <label> -->
+          <input type="checkbox" id="genre" value="romance">romance
+          <br>
+          <!-- </label> -->
+        </div>
+        <div>
+          <!-- <label> -->
+          <input type="checkbox" id="genre" value="sci-fi">science fiction
+          <br>
+          <!-- </label> -->
+        </div>
+        <div>
+          <!-- <label> -->
+          <input type="checkbox" id="genre" value="western">western
+          <!-- </label> -->
+        </div>
+      </div>
+      </div>
+      <div class="additional_info">
+        <label for="input">Additional Input</label>
+        <br>
+        <textarea name="name" rows="4" cols="55"></textarea>
+      </div>
+      <br>
+      <div class="submit_container">
+        <input type="button" id="submit_button" value="Join Film Club">
+      </div>
+    </fieldset>
+  </form>
+  <footer class="bottom_nav">
+    <div class="alt_nav">
+      <a href="../index.html" id="home" alt="home">Home</a>
+      <a href="../calendar/index.html" id="calendar" alt="calendar">Calendar</a>
+      <a href="./index.html" id="join" alt="join">Join</a>
+    </div>
+    <div id="copyright">
+      <p>© 2017, Film Club</p>
+    </div>
+  </footer>
+</body>
+
+</html>
